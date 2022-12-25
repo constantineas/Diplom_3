@@ -2,9 +2,9 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import pageObjects.BurgerIngredientsPage;
+import pageobjects.BurgerIngredientsPage;
 
-import static constants.Constant.*;
+import static constants.Constant.BASE_URL;
 
 @DisplayName("Раздел «Конструктор»")
 public class BurgerIngredientsPageTest extends BaseTest {

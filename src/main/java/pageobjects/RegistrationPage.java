@@ -1,38 +1,37 @@
-package pageObjects;
+package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class RegistrationPage extends CorePageObject {
-
     // Локатор поля ввода имени
     @FindBy(xpath = ".//fieldset[1]//input")
-    public WebElement inputNameField;
+    private WebElement inputNameField;
 
     // Локатор поля ввода email
     @FindBy(xpath = ".//fieldset[2]//input")
-    public WebElement inputEmailField;
+    private WebElement inputEmailField;
 
     // Локатор поля ввода Пароля
     @FindBy(xpath = ".//fieldset[3]//input")
-    public WebElement inputPasswordField;
+    private WebElement inputPasswordField;
 
     // Локатор кнопки Зарегистрироваться
     @FindBy(xpath = ".//button[text()='Зарегистрироваться']")
-    public WebElement buttonRegistration;
+    private WebElement buttonRegistration;
 
     // Локатор текста сообщения Некорректный пароль
     @FindBy(xpath = "//*[text() = 'Некорректный пароль']")
-    public WebElement textIncorrectPassword;
+    private WebElement textIncorrectPassword;
 
     // Локатор текста сообщения Такой пользователь уже существует
     @FindBy(xpath = "//*[text() = 'Такой пользователь уже существует']")
-    public WebElement textUserAlreadyExists;
+    private WebElement textUserAlreadyExists;
 
     // Локатор успешная регистрация
     @FindBy(xpath = "//*[text() = 'Вход']")
-    public WebElement textEnter;
+    private WebElement textEnter;
 
     // Конструктор
     public RegistrationPage(WebDriver driver) {

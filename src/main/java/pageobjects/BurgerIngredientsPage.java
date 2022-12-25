@@ -1,26 +1,25 @@
-package pageObjects;
+package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class BurgerIngredientsPage extends CorePageObject {
-
     // Локатор текста кнопки Булки
     @FindBy(xpath = "//span[text()='Булки']")
-    public WebElement buttonBun;
+    private WebElement buttonBun;
 
     // Локатор текста кнопки Соусы
     @FindBy(xpath = "//span[text()='Соусы']")
-    public WebElement buttonSauce;
+    private WebElement buttonSauce;
 
     // Локатор текста кнопки Начинки
     @FindBy(xpath = "//span[text()='Начинки']")
-    public WebElement buttonFilling;
+    private WebElement buttonFilling;
 
     // Локатор кнопки ингредиентов
     @FindBy(css = ".tab_tab_type_current__2BEPc")
-    public WebElement buttonAll;
+    private WebElement buttonAll;
 
     // Конструктор
     public BurgerIngredientsPage(WebDriver driver) {

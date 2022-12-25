@@ -1,46 +1,45 @@
-package pageObjects;
+package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends CorePageObject {
-
     // Локатор поля ввода email
     @FindBy(xpath = ".//fieldset[1]//input")
-    public WebElement inputEmailField;
+    private WebElement inputEmailField;
 
     // Локатор поля ввода пароля
     @FindBy(xpath = ".//fieldset[2]//input")
-    public WebElement inputPasswordField;
+    private WebElement inputPasswordField;
 
     // Локатор кнопки войти
     @FindBy(xpath = ".//button[text()='Войти']")
-    public WebElement buttonEnter;
+    private WebElement buttonEnter;
 
     // Локатор кнопки войти в аккаунт
     @FindBy(xpath = ".//button[text()='Войти в аккаунт']")
-    public WebElement buttonEnterAccount;
+    private WebElement buttonEnterAccount;
 
     // Локатор кнопки Оформить заказ
     @FindBy(xpath = ".//button[text()='Оформить заказ']")
-    public WebElement buttonCreateOrder;
+    private WebElement buttonCreateOrder;
 
     // Локатор кнопки Личный Кабинет
     @FindBy(xpath = ".//*[text()='Личный Кабинет']")
-    public WebElement buttonPersonalArea;
+    private WebElement buttonPersonalArea;
 
     // Локатор линктекст Войти
     @FindBy(linkText = "Войти")
-    public WebElement linkTextEnter;
+    private WebElement linkTextEnter;
 
     // Локатор линктекст Зарегистрироваться
     @FindBy(linkText = "Зарегистрироваться")
-    public WebElement linkTextRegistration;
+    private WebElement linkTextRegistration;
 
     // Локатор линктекст Восстановить пароль
     @FindBy(linkText = "Восстановить пароль")
-    public WebElement linkTextRestorePassword;
+    private WebElement linkTextRestorePassword;
 
     // Конструктор
     public LoginPage(WebDriver driver) {

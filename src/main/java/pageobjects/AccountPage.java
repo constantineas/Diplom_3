@@ -1,62 +1,61 @@
-package pageObjects;
+package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AccountPage extends CorePageObject {
-
     // Локатор кнопки Войти в аккаунт
     @FindBy(xpath = ".//button[text()='Войти в аккаунт']")
-    public WebElement buttonEnterAccount;
+    private WebElement buttonEnterAccount;
 
     // Локатор поле ввода email
     @FindBy(xpath = ".//fieldset[1]//input")
-    public WebElement inputEmailField;
+    private WebElement inputEmailField;
 
     // Локатор поле ввода Пароля
     @FindBy(xpath = ".//fieldset[2]//input")
-    public WebElement inputPasswordField;
+    private WebElement inputPasswordField;
 
     // Локатор кнопки Войти
     @FindBy(xpath = ".//button[text()='Войти']")
-    public WebElement buttonEnter;
+    private WebElement buttonEnter;
 
     // Локатор кнопки Выход
     @FindBy(xpath = ".//button[text()='Выход']")
-    public WebElement buttonExit;
+    private WebElement buttonExit;
 
     // Локатор кнопки Личный Кабинет
     @FindBy(xpath = ".//*[text()='Личный Кабинет']")
-    public WebElement buttonPersonalArea;
+    private WebElement buttonPersonalArea;
 
     // Локатор текста Имя
     @FindBy(xpath = ".//*[text()='Имя']")
-    public WebElement inputTypeName;
+    private WebElement inputTypeName;
 
     // Локатор текста Логин
     @FindBy(xpath = ".//*[text()='Логин']")
-    public WebElement inputTypeLogin;
+    private WebElement inputTypeLogin;
 
     // Локатор текста Пароль
     @FindBy(xpath = ".//*[text()='Пароль']")
-    public WebElement inputTypePassword;
+    private WebElement inputTypePassword;
 
     // Локатор текста Вход
     @FindBy(xpath = ".//*[text()='Вход']")
-    public WebElement textEnter;
+    private WebElement textEnter;
 
     // Локатор текста Конструктор
     @FindBy(xpath = ".//*[text()='Конструктор']")
-    public WebElement textConstructor;
+    private WebElement textConstructor;
 
     // Локатор кнопки Оформить заказ
     @FindBy(xpath = ".//button[text()='Оформить заказ']")
-    public WebElement buttonCreateOrder;
+    private WebElement buttonCreateOrder;
 
     // Локатор Stellar Burgers
     @FindBy(xpath = "//a[.//*[@id='filter0_f']]")
-    public WebElement stellarBurgers;
+    private WebElement stellarBurgers;
 
     // Конструктор
     public AccountPage(WebDriver driver) {

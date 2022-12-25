@@ -3,9 +3,10 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import pageObjects.RegistrationPage;
+import pageobjects.RegistrationPage;
 
-import static constants.Constant.*;
+import static constants.Constant.PASSWORD;
+import static constants.Constant.REGISTRATIONS_URL;
 
 @DisplayName("Регистрация")
 public class RegistrationPageTest extends BaseTest {

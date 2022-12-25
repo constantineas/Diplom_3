@@ -1,4 +1,4 @@
-package pageObjects;
+package pageobjects;
 
 import io.qameta.allure.Step;
 import org.junit.Assert;
@@ -13,8 +13,7 @@ import java.time.Duration;
 import static constants.Constant.TIME_OUT_IN_SECONDS;
 
 public class CorePageObject {
-
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public CorePageObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
